@@ -1,0 +1,19 @@
+/* Containers */
+.container {
+  background-color: #2d3240;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img-container {
+  background-image: url("https://edmmaniac.com/wp-content/uploads/2019/03/porter-robinson-multiverse-festival.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.album-list {
+  height: 100vh;
+}

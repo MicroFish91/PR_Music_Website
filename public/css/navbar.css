@@ -1,0 +1,39 @@
+header {
+  text-align: center;
+  background: #F8F8F8;
+  padding: 0.5em 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-list-item {
+  margin: 0 1em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: .25em 0; /* Adding padding to links make it easier for mobile users (extra link spacing) */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}

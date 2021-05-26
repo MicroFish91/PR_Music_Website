@@ -1,0 +1,144 @@
+.container {
+  background-color: #2d3240;
+  width: 100vw;
+  height: auto;
+  border: 2px solid yellow;
+}
+
+.push-down {
+  height: 15vh;
+}
+
+.albums {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  height: 50vh;
+  border: 0.5px solid white;
+  text-decoration: underline;
+  width: 35%;
+  margin: 2rem;
+}
+
+.album > a {
+  width: 60%;
+}
+
+.album img {
+  width: 100%;
+}
+
+.album-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+  height: 3vh;
+}
+
+.icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gg-music {
+  color: whitesmoke;
+  width: 14px;
+  height: 16px;
+  transform: skewY(-15deg) scale(var(--ggs,1));
+}
+
+.icon-one {
+  position: absolute;
+  left: 6.7rem;
+  top: 0.6rem;
+}
+
+.icon-two {
+  position: absolute;
+  left: 7.2rem;
+  top: 0.6rem;
+}
+
+
+/* Albums-id */
+
+.albums-id {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 45%;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid white;
+}
+
+.albums-id-title {
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  font-size: 2.2rem;
+  padding: 0;
+}
+
+.albums-id-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 50vh;
+}
+
+.albums-id-content > img {
+  height: 80%;
+}
+
+.albums-id-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 80%;
+  padding: 0;
+}
+
+.albums-id-list {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.albums-id-list-item {
+  margin-bottom: 0.3rem;
+}
+
+.albums-id-list-title {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.album-footer-id {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 3vh;
+  color: white;
+}

@@ -1,0 +1,24 @@
+<div class="albums-id">
+  <h2 class="albums-id-title"><%= album.albumname %></h2>
+  <div class="albums-id-content">
+    <img src="<%= album.artwork[0] %>" alt="<%= album.albumname %> Album Cover" >
+    <div class="albums-id-list-container">
+      <div class="albums-id-list-title">Tracklist</div>
+      <ol class="albums-id-list">
+        <% for( let i = 0; i < album.tracklist.length; i++ ) { %>
+            <li class="albums-id-list-item"><%= album.tracklist[i] %> </li>
+        <% } %>
+      </ol>
+    </div>
+  </div>
+  <div class="album-footer-id">
+    <div class='icon-container'>
+      Apple Music: 
+      <a href="<%= album.albumAM %>"><i class="gg-music icon-one"></i></a>
+    </div>
+    <div class='icon-container'>
+      Spotify Music:
+      <a href="<%= album.albumSM %>"><i class="gg-music icon-two"></i></a>
+    </div>
+  </div>
+</div>

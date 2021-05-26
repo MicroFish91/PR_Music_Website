@@ -1,42 +1,42 @@
 {
-  "Albums": [
+  "albums": [
     {
       "name": "Porter Robinson",
-      "shortname": "spitfire",
+      "shortname": "Spitfire",
       "albumname" : "Spitfire (EP)",
       "summary": "Spitfire is the debut extended play (EP) by American electronic music producer Porter Robinson, released on September 13, 2011 as the first release by Skrillex's record label OWSLA.",
       "artwork" : ["https://upload.wikimedia.org/wikipedia/en/a/ac/Porter_Robinson_Spitfire.jpg"],
-      "tracklist": "1. Spitfire<br>2. Unison<br>3. 100% in the Bitch<br>4. Vandalism (featuring Amba Shepherd)<br>5. The State<br>6. The Seconds (featuring Jano)<br>7. Unison (Knife Party Remix)<br>8. Unison (Mikkas Remix)<br>9. 100% in the Bitch (Downlink Remix)<br>10. The State (SKisM Remix)<br>11. Spitfire (Kill The Noise Remix)",
+      "tracklist": [ "Spitfire", "Unison", "100% in the Bitch", "Vandalism (featuring Amba Shepherd)", "The State", "The Seconds (featuring Jano)", "Unison (Knife Party Remix)", "Unison (Mikkas Remix)", "100% in the Bitch (Downlink Remix)", "The State (SKisM Remix)", "Spitfire (Kill The Noise Remix)"],
       "albumAM": "https://music.apple.com/us/album/spitfire/974822162",
       "albumSM": "https://open.spotify.com/album/1GGvrilWvvtJ56AmJ4hMdh"
     },
     {
       "name": "Porter Robinson",
-      "shortname": "worlds",
+      "shortname": "Worlds",
       "albumname" : "Worlds",
       "summary": "Worlds is the debut studio album by the American electronic music producer Porter Robinson, released on August 12, 2014 by Astralwerks in the United States and by Virgin EMI Records internationally. The album exhibits a shift in Robinson's music style from the heavy, bass-fueled complextro of his previous work to a more alternative form of electronic music.",
       "artwork" : ["https://upload.wikimedia.org/wikipedia/en/e/eb/Porter_Robinson_-_Worlds.jpg"],
-      "tracklist": "1. Divinity<br>2. Sad Machine<br>3. Years of War<br>4. Flicker<br>5. Fresh Static Snow<br>6. Polygon Dust<br>7. Hear the Bells<br>8. Natural Light<br>9. Lionhearted<br>10. Sea of Voices<br>11. Fellow Feeling<br>12. Goodbye to a World",
+      "tracklist": ["Divinity", "Sad Machine", "Years of War", "Flicker", "Fresh Static Snow", "Polygon Dust", "Hear the Bells", "Natural Light", "Lionhearted", "Sea of Voices", "Fellow Feeling", "Goodbye to a World"],
       "albumAM": "https://music.apple.com/us/album/worlds/1440857923",
       "albumSM": "https://open.spotify.com/album/7AJPV0L05IyIBid97AvwVD"
     },
     {
       "name": "Virtual Self",
-      "shortname": "virtualself",
+      "shortname": "VirtualSelf",
       "albumname" : "Virtual Self (EP)",
       "summary": "Virtual Self is an extended play (EP) by American electronic music producer Porter Robinson under the alias Virtual Self. The EP was released on November 29, 2017, as the first release on the eponymous record label Virtual Self.[2] Virtual Self is a departure from the sounds of Robinson's debut album Worlds, in favor of a more techno sound inspired by late 90s-early 2000s dance music.",
       "artwork" : ["https://upload.wikimedia.org/wikipedia/en/0/02/EON_BREAK_single.jpg"],
-      "tracklist": "1. Particle Arts<br>2. Ghost Voices<br>3. a.i.ngel (Become God)<br>4. Key<br>5. Eon Break",
+      "tracklist": ["Particle Arts", "Ghost Voices", "a.i.ngel (Become God)", "Key", "Eon Break"],
       "albumAM": "https://music.apple.com/us/album/virtual-self-ep/1313100664",
       "albumSM": "https://open.spotify.com/artist/0F52YLV7uWqaJfMMDgG737"
     },
     {
       "name": "Porter Robinson",
-      "shortname": "nurture",
+      "shortname": "Nurture",
       "albumname" : "Nurture",
       "summary": "Nurture is the second studio album by American electronic music producer Porter Robinson, released on April 23, 2021, on Mom + Pop Music.",
       "artwork" : ["https://upload.wikimedia.org/wikipedia/en/0/07/Porter_Robinson_-_Nurture.png"],
-      "tracklist": "1. Lifelike<br>2. Look at the Sky<br>3. Get Your Wish<br>4. Wind Tempos<br>5. Musician<br> 6. Do-re-mi-fa-so-la-ti-do<br>7. Mother<br>8. Dullscythe<br>9. Sweet Time<br>10. Mirror<br>11. Something Comforting<br>12. Blossom<br>13. Unfold (with Totally Enormous Extinct Dinosaurs)<br>14. Trying to Feel Alive",
+      "tracklist": ["Lifelike", "Look at the Sky", "Get Your Wish", "Wind Tempos", "Musician", "Do-re-mi-fa-so-la-ti-do", "Mother", "Dullscythe", "Sweet Time", "Mirror", "Something Comforting", "Blossom", "Unfold (with Totally Enormous Extinct Dinosaurs)", "Trying to Feel Alive"],
       "albumAM": "https://music.apple.com/us/album/nurture/1550626757",
       "albumSM": "https://open.spotify.com/album/4Hjqdhj5rh816i1dfcUEaM"
     }
