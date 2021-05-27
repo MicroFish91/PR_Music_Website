@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { albums } = require('../data/data.json');
+const feedback = require('../data/feedback.json');
 
 router.get('/albums', (req, res) => {
   res.render('albums', {
@@ -11,11 +12,13 @@ router.get('/albums', (req, res) => {
   });
 })
 
-router.get('/albums/:id', (req, res) => {
-  const { id } = req.params;
+router.get('/albums/:shortname', (req, res) => {
+  const id = albums.findIndex(album => album.shortname === req.params.shortname);
+  const albumFeedback = feedback.filter(review => review.album.trim() === req.params.shortname.trim());
   res.render('albums', {
     album: albums[id],
     albums: null,
+    albumFeedback,
     pageId: 'albums',
     pageTitle: albums[id].shortname
   });
