@@ -11,6 +11,7 @@ app.set('views', 'views');
 
 // Routes
 app.use(require('./routes/albums'));
+app.use(require('./routes/feedback'));
 app.use(require('./routes/'));
 
 app.listen(port, () => console.log(`Listening on port ${port}.`))

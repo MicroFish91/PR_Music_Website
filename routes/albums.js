@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const albums = require('../data/data.json').albums;
+const { albums } = require('../data/data.json');
 
 router.get('/albums', (req, res) => {
   res.render('albums', {

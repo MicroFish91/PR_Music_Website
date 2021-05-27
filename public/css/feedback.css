@@ -1,0 +1,58 @@
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  background-color: #2d3240;
+  height: 100vh;
+}
+
+.push-down {
+  height: 12.5vh;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+  align-items: center;
+  width: 30%;
+  height: 50vh;
+  margin-top: 2rem;
+  border: 2px solid white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 1.4rem;
+}
+
+.form-title {
+  width: 50%;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.album-dropdown {
+  width: 50%;
+}
+
+.button-wrapper {
+  width: 50%;
+  height: 5%;
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-top: 0.1rem;
+}
+
+input, textarea, label {
+  width: 50%;
+}
+
+label {
+  width: 50%;
+}
+
+button {
+  width: 4.2vw;
+  height: 2.3vh;
+  padding-left: 0.2rem;
+}
