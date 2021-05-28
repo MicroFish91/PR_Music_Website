@@ -2,8 +2,16 @@
   <h2 class="album-title">Latest Reviews</h2> <br>
   <ol class="review">
     <% for( let i = 0; i < albumFeedback.length; i++ ) { %>
-      <li class="review-title">"<%= albumFeedback[i].username %>" wrote:</li> <br>
-      <div class="review-message"><%= albumFeedback[i].message %></div> <br> <br>
+      <% if (pageId === 'feedback') { %>
+        <li class="review-title">"<%= albumFeedback[i].username %>" wrote (for: <%= albumFeedback[i].album %> ): </li> <br>
+      <% } %>
+      <% if (pageId === 'albums') { %>
+        <li class="review-title">"<%= albumFeedback[i].username %>" wrote: </li> <br>
+      <% } %>
+        <div class="review-message"><%= albumFeedback[i].message %></div> <br> 
+      <% if (pageId === 'feedback') { %>
+        <div><i class="gg-close-o">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRemove</i></div> <br> <br> 
+      <% } %>
     <% } %> 
   </ol>
 </div>
