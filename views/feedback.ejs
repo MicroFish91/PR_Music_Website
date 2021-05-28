@@ -19,7 +19,7 @@
         <label for="album">Album: </label> <br>
         <select id="form-album" class="album-dropdown" name="album">
           <% for( let i = 0; i < albums.length; i++ ) { %>
-            <option value="<%= albums[i].shortname %> "><%= albums[i].albumname %> </option>
+            <option value="<%= albums[i].albumname %> "><%= albums[i].albumname %> </option>
           <% } %>
         </select> <br>
         <label for="username">Review: </label> <br>
@@ -33,6 +33,6 @@
     </div>
   </div>
   
-  <script src="/js/albumReviews.js"></script>
+  <script type="module" src="/js/albumReviews.js"></script>
 </body>
 </html>

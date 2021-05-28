@@ -27,3 +27,7 @@
 .review.title {
   padding-left: 0.5rem;
 }
+
+.delete-button:hover {
+  cursor: pointer;
+}

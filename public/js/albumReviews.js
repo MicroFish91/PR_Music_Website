@@ -1,8 +1,27 @@
-const feedbackForm = document.querySelector('.feedback-form');
+import { appendFeedback, deleteReview } from '/js/feedbackHelpers.js';
 
+const feedbackForm = document.querySelector('.feedback-form');
+const formContainer = document.querySelector('.album-feedback');
+
+// Deletes Data
+formContainer.addEventListener('click', e => {
+  if(e.target.id[0] === 'b'){
+    const id = e.target.id.slice(1);
+    fetch(`/api/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8' // Indicates the content 
+       }
+    })
+    .then(res => console.log(`id: ${id} deleted`))
+    deleteReview(id);
+  }
+});
+
+// Posts Form Data
 feedbackForm.addEventListener('submit', async e => {
   e.preventDefault();
-
+  
   const formObj = {
     username: document.querySelector('#form-username').value,
     album: document.querySelector('#form-album').value,
@@ -19,18 +38,4 @@ feedbackForm.addEventListener('submit', async e => {
   const postData = await postJSON.json();
 
   appendFeedback(postData);
-})
-
-function appendFeedback(reviewData){
-  const reviewContainer = document.querySelector('.review');
-  const reviewNum = (reviewData.length > 4 && 4) || reviewData.length;
-  let newReviews = '';
-  
-  for(let i = 0; i < reviewNum; i++) {
-    newReviews += `<li class="review-title">"${reviewData[i].username}" wrote (for ${reviewData[i].album.trim()}):</li> <br> `;
-    newReviews += `<div class="review-message">${reviewData[i].message}</div> <br>`;
-    newReviews += `<div><i class="gg-close-o">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRemove</i></div> <br> <br> `;
-  }
-
-  reviewContainer.innerHTML = newReviews;
-}
+});
