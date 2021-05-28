@@ -1,8 +1,9 @@
 .feedback-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: #2d3240;
   height: 100vh;
+  padding-top: 5rem;
 }
 
 .push-down {
@@ -16,7 +17,6 @@
   align-items: center;
   width: 30%;
   height: 50vh;
-  margin-top: 2rem;
   border: 2px solid white;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
   color: white;
@@ -32,7 +32,8 @@
 }
 
 .album-dropdown {
-  width: 50%;
+  width: 51%;
+  height: 2.5vh;
 }
 
 .button-wrapper {
@@ -47,6 +48,10 @@ input, textarea, label {
   width: 50%;
 }
 
+input {
+  height: 2.2vh;
+}
+
 label {
   width: 50%;
 }
@@ -55,4 +60,8 @@ button {
   width: 4.2vw;
   height: 2.3vh;
   padding-left: 0.2rem;
+}
+
+button:hover {
+  cursor: pointer;
 }

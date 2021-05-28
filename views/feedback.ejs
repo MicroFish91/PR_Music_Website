@@ -12,26 +12,27 @@
     <div class="push-down"></div>
 
     <div class="feedback-container">
-      <form class="feedback-form" type="submit" method="POST" action="/feedback">
+      <form class="feedback-form" type="submit" method="POST" action="/api">
         <div class="form-title">Feedback Form</div>
         <label for="username">Name: </label> <br>
-        <input name="username" placeholder="Your username.." type="text" required > <br>
+        <input id="form-username" name="username" placeholder="Your username.." type="text" required > <br>
         <label for="album">Album: </label> <br>
-        <select class="album-dropdown" name="album">
+        <select id="form-album" class="album-dropdown" name="album">
           <% for( let i = 0; i < albums.length; i++ ) { %>
             <option value="<%= albums[i].shortname %> "><%= albums[i].albumname %> </option>
           <% } %>
         </select> <br>
         <label for="username">Review: </label> <br>
-        <textarea name="message" placeholder="Leave your review here.." rows="4" cols="50"></textarea> <br>
+        <textarea id="form-message" name="message" placeholder="Leave your review here.." rows="4" cols="50"></textarea> <br>
         <div class="button-wrapper">
           <button type="submit">Submit</button>
         </div>
       </form>
+
+      <%- include ('partials/content/displayReviews.ejs') %> 
     </div>
-
   </div>
-
-  <script src="/js/feedback.js"></script>
+  
+  <script src="/js/albumReviews.js"></script>
 </body>
 </html>

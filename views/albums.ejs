@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <%- include ('partials/structure/head.ejs') %> 
+  <link rel="stylesheet" href="/css/reviews.css">
 </head>
 <body>
   <div class="container">
@@ -19,7 +20,10 @@
 
     <!-- /albums/id -->
     <% if (album) { %>
+    <div class="albums-id-container"> 
       <%- include ('partials/content/displayAlbum.ejs') %> 
+      <%- include ('partials/content/displayReviews.ejs') %> 
+    </div>
     <% } %>
 
   </div>

@@ -9,6 +9,9 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
 // Routes
 app.use(require('./routes/albums'));
 app.use(require('./routes/feedback'));

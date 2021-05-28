@@ -1,0 +1,29 @@
+/* Albums-id feedback */
+.album-feedback {
+  width: 45%;
+  height: 70vh;
+  border: 2px solid white;
+  color: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10rem;
+  padding: 0;
+}
+
+.album-title {
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+  font-size: 2.2rem;
+  padding: 0;
+}
+
+.review {
+  padding: 0;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.review.title {
+  padding-left: 0.5rem;
+}

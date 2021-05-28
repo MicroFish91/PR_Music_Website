@@ -3,6 +3,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Porter Robinson - <%= pageTitle %> </title>
 <link href='https://css.gg/music.css' rel='stylesheet'>
+<link href='https://css.gg/close-o.css' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="/css/index.css">
 <link rel="stylesheet" type="text/css" href="/css/navbar.css">
 <link rel="stylesheet" type="text/css" href="/css/<%= pageId %>.css">
+
+<% if (pageId === "feedback" || pageId === "albums") { %>
+  <link rel="stylesheet" type="text/css" href="/css/reviews.css">
+<% } %>

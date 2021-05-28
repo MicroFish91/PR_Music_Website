@@ -1,0 +1,9 @@
+<div class="album-feedback" style=<%= (pageId === 'albums') ? "margin-top:2rem" : "" %>>
+  <h2 class="album-title">Latest Reviews</h2> <br>
+  <ol class="review">
+    <% for( let i = 0; i < albumFeedback.length; i++ ) { %>
+      <li class="review-title">"<%= albumFeedback[i].username %>" wrote:</li> <br>
+      <div class="review-message"><%= albumFeedback[i].message %></div> <br> <br>
+    <% } %> 
+  </ol>
+</div>
