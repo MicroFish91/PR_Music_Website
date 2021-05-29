@@ -7,9 +7,14 @@
   <!-- Nav -->
   <nav>
       <ul class="nav-list">
-          <li class="nav-list-item"><a class="nav-link current-page" href="/" >Home</a></li>
-          <li class="nav-list-item"><a class="nav-link recent-posts" href="/albums" >Discography</a></li>
-          <li class="nav-list-item"><a class="nav-link recent-posts" href="/feedback" >Feedback</a></li>
+          <li class="nav-list-item">
+              <a class="nav-link <%=(pageId === 'home') ? "current-page" : "recent-posts" %>" href="/">Home</a></li>
+          <li class="nav-list-item">
+              <a class="nav-link <%=(pageId === 'albums') ? "current-page" : "recent-posts" %>" href="/albums">Discography</a></li>
+          <li class="nav-list-item">
+              <a class="nav-link <%=(pageId === 'feedback') ? "current-page" : "recent-posts" %>" href="/feedback">Feedback</a></li>
+          <li class="nav-list-item">
+              <a class="nav-link <%=(pageId === 'chatroom') ? "current-page" : "recent-posts" %>" href="/chatroom">Chatroom</a></li>
       </ul>
   </nav>
 </div>
