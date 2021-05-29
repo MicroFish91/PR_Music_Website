@@ -25,11 +25,11 @@ app.use(require('./routes/'));
 
 let server = app.listen(port, () => console.log(`Listening on port ${port}.`));
 
-// Set up WebSockets
 let io = socket(server); 
 
+// Set up socket inbound/outbound message broadcasting
 io.on('connection', socket => {
-  socket.on('postMessages', msgObj => {
-    io.emit('updateMessage', msgObj)
+  socket.on('userPostMessage', message => {
+    io.emit('serverBroadcastMessage', message)
   })
 })

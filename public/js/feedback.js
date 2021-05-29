@@ -1,4 +1,4 @@
-import { appendFeedback, deleteReview } from '/js/feedbackHelpers.js';
+import { appendFeedback, deleteReview } from './helpers/feedbackHelpers.js';
 
 const feedbackForm = document.querySelector('.feedback-form');
 const formContainer = document.querySelector('.album-feedback');
