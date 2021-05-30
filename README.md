@@ -2,7 +2,7 @@
 Put together a quick music website to demo. Showcases recent topics being explored such as setting up a back-end server with Node and Express (w/o database for now - reading/writing to and from local json file to simplify). Focus of website is on EJS rendering with form data as well as an introduction to Socketio.  Five page types are showcased:  Home, Albums, Album, Feedback, and Chatroom (described below).
 
 ## How to Use
-Clone down repo, cd into folder, boot from index
+Feel free to clone down and boot from index
 
 ## Technologies Used
 EJS, Express, Joi, Morgan, Node, Node FS Core, Socketio
