@@ -1,9 +1,9 @@
 const express = require('express');
-const router = express.Router();
 const { albums } = require('../data/data.json');
+let feedback = require('../data/feedback.json');
 const jsonParser = require('../helpers/jsonParser');
 const validateFeedback = require('../helpers/validateFeedback');
-let feedback = require('../data/feedback.json');
+const router = express.Router();
 
 router.use(express.json());
 router.use(express.urlencoded({extended:true}));

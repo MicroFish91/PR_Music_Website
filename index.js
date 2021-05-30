@@ -19,8 +19,8 @@ app.set('views', 'views');
 
 // Routes
 app.use(require('./routes/albums'));
-app.use(require('./routes/feedback'));
 app.use(require('./routes/chatroom'));
+app.use(require('./routes/feedback'));
 app.use(require('./routes/'));
 
 let server = app.listen(port, () => console.log(`Listening on port ${port}.`));
