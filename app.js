@@ -1,7 +1,7 @@
+const Chatroom = require('./sockets/Chatroom.js');
 const debug = require('debug')('app:startup');  // set env 'export DEBUG='app:startup'
 const express = require('express');
 const morgan = require('morgan');
-const socket = require('socket.io');
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -25,11 +25,13 @@ app.use(require('./routes'));
 
 let server = app.listen(port, () => console.log(`Listening on port ${port}.`));
 
-let io = socket(server); 
+Chatroom.connect(server);
 
-// Set up socket inbound/outbound message broadcasting
-io.on('connection', socket => {
-  socket.on('userPostMessage', message => {
-    io.emit('serverBroadcastMessage', message)
-  })
-})
+// Replaces -
+// let io = socket(server); 
+
+// io.on('connection', socket => {
+//   socket.on('userPostMessage', message => {
+//     io.emit('serverBroadcastMessage', message)
+//   })
+// }
